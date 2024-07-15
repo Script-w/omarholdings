@@ -301,14 +301,12 @@
     <!-- Custom JS -->
     <script>
         function submitMessage() {
-            // Get the name from the name textfield
-            var name = document.getElementById("name").value;
-
+            
             // Get the message from the message textarea
             var message = document.getElementById("message").value;
-            var final = "Hi, I am " + name + ", " + message;
+        
             // Encode the message for URL parameters (replace spaces with %20)
-            var encodedMessage = encodeURIComponent(final);
+            var encodedMessage = encodeURIComponent(message);
             
             if (name === "" || message === "") {
                 alert("Fill all the fields please!");
