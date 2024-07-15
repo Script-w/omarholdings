@@ -317,7 +317,7 @@
                 alert("Fill all the fields please!");
             } else {
                 // Build the WhatsApp chat URL (replace with your WhatsApp number)
-                var whatsappUrl = "https://wa.me/+265882138640?text=" + encodedMessage;
+                var whatsappUrl = "https://wa.me/+265882138640?text=" + whatsapp.message.value;
 
                 // Redirect the user to the WhatsApp chat URL
                 window.location.href = whatsappUrl;
