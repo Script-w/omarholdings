@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omar Holdings | Your Bank</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: red;
+            color: #fff;
+        }
+
+        .navbar {
+            margin-bottom: 50px;
+            background-color: #800000;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            color: white !important;
+        }
+
+        .collapse ul li::after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: gold;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+
+        .collapse ul li:hover::after {
+            width: 100%;
+        }
+
+        .nav-link {
+            color: #fff !important;
+        }
+
+        .hero {
+            background-image: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url('hero-image.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+            text-align: center;
+            padding: 20% 0;
+        }
+
+        .hero h1 {
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .hero .btn {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: gold;
+            color: red;
+        }
+
+        .card-body {
+            height: 100%;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .card .material-icons,
+        .card .fa, #bank {
+            font-size: 48px;
+            color: gold;
+        }
+
+        .card-title {
+            color: #000;
+        }
+
+        .card-text {
+            color: #000;
+        }
+
+        .map{
+            border: 2px solid #800000;
+            padding: 0px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            height: auto;
+            width: 100%;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border: 2px solid #800000;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color: #000;
+        }
+
+        .form-container label {
+            color: #800000;
+        }
+
+        .form-container .btn-primary {
+            background-color: gold;
+            border: none;
+            color: red;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #800000;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            color: #fff;
+        }
+
+        .footer a i,
+        .footer a .material-icons {
+            font-size: 24px;
+            vertical-align: middle;
+        }
+
+        .footer p {
+            color: #fff;
+        }
+
+        @media (max-width: 767.98px) {
+            .collapse ul li::after {
+                background: #800000;
+            }
+
+            .hero {
+                padding: 30% 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero .btn {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-university"></i> OMAR HOLDINGS
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="display-4 display-md-3">OMAR HOLDINGS</h1>
+            <p>Your trusted partner for secure and convenient financial services.</p>
+            <a href="#about" class="btn btn-primary">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>About Us</h2>
+                <p class="lead">
+                    At Omar Holdings, we are dedicated to providing exceptional mobile money and banking services to our community. As a trusted agent for major mobile money platforms like Airtel Money and Mpamba, as well as leading banks such as National Bank, NBS Bank, and FDH Bank, we offer secure and convenient solutions for all your financial needs. Whether you are sending money to loved ones, managing bank transactions, or paying utility bills, we ensure a seamless and reliable experience.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Our Services</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="material-icons">account_balance_wallet</i>
+                        <h4 class="card-title">Mobile Money</h4>
+                        <p class="card-text">Quick and secure Airtel Money, Mpamba, and Mukuru services to manage your finances conveniently.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i id="bank" class="fas fa-university"></i>
+                        <h4 class="card-title">Banking Agent</h4>
+                        <p class="card-text">Acting as an agent for National Bank, NBS Bank, and FDH Bank. Visit us for all your banking needs and transactions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="material-icons">local_activity</i>
+                        <h4 class="card-title">Electricity Units Purchase</h4>
+                        <p class="card-text">Buy electricity units seamlessly and efficiently through us.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2>Contact Us</h2>
+                <p class="lead">Have questions or ready to get started? Contact us today!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-container">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                        </div>
+                        <input type="hidden" id="whatsapp-message" name="message">
+                        <button type="button" class="btn btn-primary" onclick="submitMessage()">Send Message</button>
+                    </form>
+                </div>
+                <p class="mt-3">We typically respond to inquiries within 6 hours.</p>
+            </div>
+            <div class="col-md-6">
+                <h2>Our Location</h2>
+                <p class="mt-3">Just next to Max Complex, Lilongwe</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3871.3205040917073!2d33.8209691742392!3d-13.999000386419187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19202db93116ab63%3A0x2a69865d3c036698!2sMax%20Complex!5e0!3m2!1sen!2smw!4v1721006526662!5m2!1sen!2smw" class="map" style="padding: 0px 0px; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <a href="https://wa.me/+265882138640" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:omarhameesjack@gmail.com"><i class="material-icons">email</i></a>
+            <a href="tel:+1234567890"><i class="material-icons">phone</i></a>
+            <p>&copy; 2024 Omar Holdings. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        function submitMessage() {
+            // Get the name from the name textfield
+            var name = document.getElementById("name").value;
+
+            // Get the message from the message textarea
+            var message = document.getElementById("message").value;
+
+            // Encode the message for URL parameters (replace spaces with %20)
+            var encodedMessage = encodeURIComponent(message);
+
+            // Set the value of the hidden input field
+            document.getElementById("whatsapp-message").value = "Hi Omar Holdings, I am " + name + "," + encodedMessage;
+
+            if (name === "" || message === "") {
+                alert("Fill all the fields please!");
+            } else {
+                // Build the WhatsApp chat URL (replace with your WhatsApp number)
+                var whatsappUrl = "https://wa.me/+265882138640?text=" + encodedMessage;
+
+                // Redirect the user to the WhatsApp chat URL
+                window.location.href = whatsappUrl;
+            }
+        }
+    </script>
+</body>
+
+</html>
