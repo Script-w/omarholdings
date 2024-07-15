@@ -306,6 +306,7 @@
 
             // Get the message from the message textarea
             var message = document.getElementById("message").value;
+            message = "Hi, I am " + name + message;
 
             // Encode the message for URL parameters (replace spaces with %20)
             var encodedMessage = encodeURIComponent(message);
