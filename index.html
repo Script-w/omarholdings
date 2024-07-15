@@ -311,7 +311,7 @@
             var encodedMessage = encodeURIComponent(message);
 
             // Set the value of the hidden input field
-            var final = document.getElementById("whatsapp-message").value = "Hi Omar Holdings," + encodedMessage;
+            var final = document.getElementById("whatsapp-message").value = "Hi%20Omar%20Holdings," + encodedMessage;
 
             if (name === "" || message === "") {
                 alert("Fill all the fields please!");
