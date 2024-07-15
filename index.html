@@ -309,15 +309,12 @@
 
             // Encode the message for URL parameters (replace spaces with %20)
             var encodedMessage = encodeURIComponent(message);
-
-            // Set the value of the hidden input field
-            document.getElementById("whatsapp-message").value = "Hi%20Omar%20Holdings," + encodedMessage;
-            var final =  document.getElementById("whatsapp-message").value;
+            
             if (name === "" || message === "") {
                 alert("Fill all the fields please!");
             } else {
                 // Build the WhatsApp chat URL (replace with your WhatsApp number)
-                var whatsappUrl = "https://wa.me/+265882138640?text=" + final;
+                var whatsappUrl = "https://wa.me/+265882138640?text=" + encodedMessage;
 
                 // Redirect the user to the WhatsApp chat URL
                 window.location.href = whatsappUrl;
