@@ -301,20 +301,17 @@
     <!-- Custom JS -->
     <script>
         function submitMessage() {
-            
-            // Get the message from the message textarea
+            var name = document.getElementById("name").value;
             var message = document.getElementById("message").value;
-        
-            // Encode the message for URL parameters (replace spaces with %20)
-            var encodedMessage = encodeURIComponent(message);
             
             if (name === "" || message === "") {
                 alert("Fill all the fields please!");
             } else {
-                // Build the WhatsApp chat URL
+                var fullMessage = "Name: " + name + "%0A" + "\nMessage: " + message;
+                var encodedMessage = encodeURIComponent(fullMessage);
+
                 var whatsappUrl = "https://wa.me/+265882138640?text=" + encodedMessage;
 
-                // Redirect the user to the WhatsApp chat URL
                 window.location.href = whatsappUrl;
             }
         }
